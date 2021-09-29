@@ -13,7 +13,7 @@ type Service struct {
 
 func main() {
 	dbURL := "mongodb://127.0.0.1:27017"
-	dbName := "ml-gateway-testing"
+	dbName := "go-mock"
 
     db := InitDB(dbURL, dbName)
 	s := &Service{
