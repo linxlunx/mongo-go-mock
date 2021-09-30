@@ -32,7 +32,6 @@ func (r *CollRepository) Insert(userData User) (primitive.ObjectID, error) {
 	if err != nil {
 		return primitive.ObjectID{}, err
 	}
-	userData.ID = result.InsertedID.(primitive.ObjectID)
 	return result.InsertedID.(primitive.ObjectID), nil
 }
 
